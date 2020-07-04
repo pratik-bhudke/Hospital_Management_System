@@ -1,0 +1,88 @@
+<html>
+ <head>
+   <title>MANAGER</title>
+<img src="name.png" height="150" width="1400">
+
+<style type="text/css">
+   
+table.ph{font-size:15px;font-weight:bold;foreground:violet;text-align:center;}
+a.ph1{color:white;text-decoration:none;text-align:middle}
+a:hover{color:darkviolet}
+td.menu{background-color:brown}
+table.menu
+{
+font-size:100%;
+position:absolute;
+visibility:hidden;
+}
+</style>
+<script type="text/javascript">
+function showM(element)
+{
+document.all(element).style.visibility="visible"
+}
+function hideM(element)
+{
+document.all(element).style.visibility="hidden"
+}
+</script>
+
+ </head>
+
+
+<body background="bgg.jpg">
+
+<div style="position:relative;left:200px">
+</div>
+<br>
+<br>
+   <div style="position:relative">
+    <font color=GREEN face=Algerian size="90">
+      <center>Welcome, Administrator</font>
+   </div>
+<BR>
+<br>
+<br>
+<br>
+<TABLE ALIGN=LEFT>
+<TR><td><A HREF="home.html">Home</td></TR>
+</TABLE>
+<br>
+<br>
+<br>
+
+<form name=f >
+	<center>
+		<table width="85%" class=ph>
+		<tr bgcolor="green">
+		<td onmouseover="showM('Add Master Details')" onmouseout="hideM('Add Master Details')" width="25%">
+		<a class=ph1>Add Master Details</a><br>
+		<table class="menu" id="Add Master Details" width="25%">
+		<tr><td class="menu"><a href="AddPat.html" class=ph1> Add Patient Deatils</a></td></tr>
+		<tr><td class="menu"><a href="AddStaff.html" class=ph1> Add Staff Deatils</a></td></tr>
+		</table>
+		</td>
+		<td onmouseover="showM('View Master Details')" onmouseout="hideM('View Master Details')" width="25%">
+        	<a class=ph1>View Master Details</a><br/>
+		<table class="menu" id="View Master Details" width="25%">
+		<tr><td class="menu"><a href="ViewPat1.php" class=ph1 target=fr>View Patient Deatils</a></td></tr>
+		<tr><td class="menu"><a href="ViewStaff1.php" class=ph1 target=fr>View Staff Deatils</a></td></tr>
+		</table>
+		</td>
+	
+		<td onmouseover="showM('Delete Master Details')" onmouseout="hideM('Delete Master Details')" width="26%">
+        	<a class=ph1>Delete Master Details</a><br/>
+		<table class="menu" id="Delete Master Details" width="25%">
+		<tr><td class="menu"><a href="DelPat1.php" class=ph1 target=fr>Delete Patient Deatils</a></td></tr>
+		<tr><td class="menu"><a href="DelStaff1.php" class=ph1 target=fr>Delete Staff Deatils</a></td></tr>
+		</table>
+	</td>
+       
+	</table>	
+	</center>
+	
+</form>
+<br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<iframe name=fr width=1350 height=400 align="center">
+ </body>
+</html>

@@ -1,0 +1,84 @@
+<html>
+ <head>
+   <title>LOGIN</title>
+   <script type="text/javascript">
+   function validuser()
+   {
+   var us=document.myform.user.value;
+   if(us == '')
+   {
+   p1.innerText="enter username";
+   return false;
+   }
+   }
+   function validPwd() 
+   {
+  
+	var pw1 = document.myform.pwd.value;
+	if (pw1 == '') 
+	{
+	p2.innerText="Please enter your password";
+	return false;
+	}
+	else
+	{
+	if (document.myForm.username.value.search(/[A-Z a-z]/) != 0)
+	{
+	p2.innerText="Sorry, numbers are not allowed";
+	return false;
+	}
+	else
+	{
+ return true;
+	}
+	}
+	}
+   </script>
+   <style type="text/css">
+   img
+   {
+   position:absolute;
+   z-index:-3;
+   }
+   </style>
+ </head>
+ <body background="bgg.jpg">
+<img src="name.png" width=1400 height=150 align=left><br><br><br><br><br><br>
+ <center>
+ <br>
+ <br>
+    <font color="Green" face=Algerian size="50">
+      ADVANCED HOSPITAL MANAGEMENT
+	</font> 
+     <hr align=center color=red width=60%>
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="home.html">Home</a>
+<center><B><BR>
+    <font color=black face="Monotype Corsiva" size="8">LOGIN</font>
+</B><br>
+     </center>
+
+
+<form method="POST" action="login.php">
+<table align=center>
+	<tr>
+	 <td align=center><b>UserName:</b></td>
+	 <td align=center><input type=text name=n1 onblur="validuser()"></td>
+	 <td><p id="p1"></p></td>
+	</tr><br>
+	<tr>
+	 <td align=center><b>Password:</b></td>
+	 <td align=center><input type=password name=n2 onblur="validPwd()"></td><td><p id="p2"></p></td>
+	</tr>
+	<tr>
+	<td align=center colspan=2><br><br><input type=submit value=Submit></td>
+	</tr>
+</table>	
+</form>
+ </body>
+</html>
